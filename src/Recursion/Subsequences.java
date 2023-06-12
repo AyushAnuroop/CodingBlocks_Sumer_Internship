@@ -14,6 +14,6 @@ public class Subsequences {
     public static void main(String[] args) {
         String str = "abcd";
         int num = subsequence(str, "");
-        System.out.println(num);
+        System.out.println("\n"+num);
     }
 }
