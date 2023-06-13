@@ -1,5 +1,7 @@
 package Deep_Dive_Recursion;
 
+import java.util.Arrays;
+
 public class Rat_In_A_Maze {
     public static void paths(int[][] maze, int curr_row, int curr_col, int row, int col, boolean[][] vis, String s){
 
