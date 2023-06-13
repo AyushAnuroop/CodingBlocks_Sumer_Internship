@@ -19,7 +19,7 @@ public class Maze_Path_Four_Direction {
         paths(curr_row, curr_col+1, row, col, vis,s+"L");
         paths(curr_row, curr_col-1, row, col, vis,s+"R");
 
-//        backtrack
+        //backtrack
         vis[curr_row][curr_col]=false;
 
     }
