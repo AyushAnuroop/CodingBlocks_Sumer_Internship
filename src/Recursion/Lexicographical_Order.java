@@ -3,15 +3,16 @@ package Recursion;
 public class Lexicographical_Order {
 
     public static void lexico(int curr, int n) {
-        if(curr==n){
+        if(curr>n){
             return;
         }
+        System.out.println(curr);
         int i=0;
         if(curr==0){
             i=1;
         }
-        for(;i<n;i++){
-            lexico(i%10, n);
+        for(;i<=9;i++){
+            lexico(curr*10+i, n);
         }
     }
     public static void main(String[] args) {
