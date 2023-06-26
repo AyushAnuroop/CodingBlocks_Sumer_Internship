@@ -14,6 +14,7 @@ public class Replace_All_Pi {
     
     public static void main(String[] args) {
         String str = "apipipippxxi";
+//        String str = "penpineappleapplepen";
         System.out.println(replace(str,""));
     }
 }

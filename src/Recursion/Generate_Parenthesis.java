@@ -3,8 +3,8 @@ package Recursion;
 public class Generate_Parenthesis {
 
     public static void genrate(String s,int open, int close, int n) {
-        if(open==n && close==n){            //it isn't necessariy to metion open==n case.
-            System.out.println(s); 
+        if(open==n && close==n){            //it isn't necessary to mention open==n case.
+            System.out.println(s);
             return ;
         }
         if(open<n)
