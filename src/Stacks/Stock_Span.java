@@ -16,6 +16,8 @@ public class Stock_Span {
         }
         System.out.println("END");
     }
+
+//    Brute Force Approach
     private static void stockSpan2(int[] arr, int n) {
         for (int i = 0; i < n; i++) {
             int span=1;
