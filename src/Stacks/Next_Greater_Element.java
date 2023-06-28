@@ -1,7 +1,6 @@
 package Stacks;
 
-import java.util.Scanner;
-import java.util.Stack;
+import java.util.*;
 
 public class Next_Greater_Element {
 
@@ -14,8 +13,8 @@ public class Next_Greater_Element {
             for (int i = 0; i < n; i++) {
                 arr[i]=sc.nextInt();
             }
-
-//            nextGreater(arr,n);
+            nextGreater(arr,n);
+            System.out.println("=========");
             nextGreater2(arr,n);
         }
     }
@@ -36,14 +35,23 @@ public class Next_Greater_Element {
         }
     }
 
-//      11 13 21 3
-//      11 9 13 21 3
+//      11 13 21 3 ==> 13,21,-1,-1
+//      11 9 13 21 3 ==>13, 13, 21, -1,-1
     private static void nextGreater(int[] arr, int n) {
         Stack<Integer> s = new Stack<>();
-        for (int i = 0; i < n; i++) {
+        ArrayList<String> list = new ArrayList<>();
+        for (int i = n-1; i >=0; i--) {
+            while(!s.isEmpty() && arr[i]>s.peek())
+                s.pop();
             if(s.isEmpty())
-                s.push(arr[i]);
-
+                list.add(arr[i]+" "+-1);
+            else
+                list.add(arr[i]+" "+s.peek());
+            s.push(arr[i]);
+        }
+        Collections.reverse(list);
+        for (String str : list) {
+            System.out.println(str);
         }
     }
 }
