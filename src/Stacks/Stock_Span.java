@@ -7,9 +7,7 @@ public class Stock_Span {
     public static void stockSpan(int[] arr, int n){
         Stack<Integer> s = new Stack<>();
 //        int [] arr = {13,15,12,14,16,8,6,4,10,30};
-        s.push(0);
-        System.out.print(1+" ");
-        for (int i = 1; i < n; i++) {
+        for (int i = 0; i < n; i++) {
             while (!s.isEmpty() && arr[s.peek()]<=arr[i]){
                 s.pop();
             }
