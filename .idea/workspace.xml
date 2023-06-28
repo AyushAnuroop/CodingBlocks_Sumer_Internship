@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b41bcdb9-c141-4351-9591-88a0d4898c25" name="Changes" comment="Intial Version">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Stacks/Stock_Span.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stacks/Stock_Span.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +40,7 @@
       <recent name="C:\Users\My PC\Coding Languages\CodingBlocks_Summer_Internship\src\Recursion" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Stock_Span">
+  <component name="RunManager" selected="Application.Previous_Greater">
     <configuration name="Balanced_Parenthesis" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Stacks.Balanced_Parenthesis" />
       <module name="CodingBlocks_Summer_Internship" />
@@ -68,8 +67,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Next_Greater_Element" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Stacks.Next_Greater_Element" />
+    <configuration name="Previous_Greater" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Stacks.Previous_Greater" />
       <module name="CodingBlocks_Summer_Internship" />
       <extension name="coverage">
         <pattern>
@@ -109,11 +108,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Previous_Greater" />
         <item itemvalue="Application.Stock_Span" />
         <item itemvalue="Application.Reverse_Stack" />
         <item itemvalue="Application.Delete_Middle_Element" />
         <item itemvalue="Application.Balanced_Parenthesis" />
-        <item itemvalue="Application.Next_Greater_Element" />
       </list>
     </recent_temporary>
   </component>
@@ -231,7 +230,28 @@
       <option name="project" value="LOCAL" />
       <updated>1687939380791</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Intial Version">
+      <created>1687940071282</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1687940071282</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Intial Version">
+      <created>1687940103527</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1687940103527</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Intial Version">
+      <created>1687940211722</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1687940211722</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
