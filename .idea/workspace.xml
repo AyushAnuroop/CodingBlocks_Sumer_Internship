@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b41bcdb9-c141-4351-9591-88a0d4898c25" name="Changes" comment="Intial Version">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Recursion/Generate_Parenthesis.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Recursion/Generate_Parenthesis.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Recursion/Replace_All_Pi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Recursion/Replace_All_Pi.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,9 +40,9 @@
       <recent name="C:\Users\My PC\Coding Languages\CodingBlocks_Summer_Internship\src\Recursion" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.DynamicStack">
-    <configuration name="DynamicStack" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Stacks.DynamicStack" />
+  <component name="RunManager" selected="Application.Stock_Span">
+    <configuration name="Balanced_Parenthesis" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Stacks.Balanced_Parenthesis" />
       <module name="CodingBlocks_Summer_Internship" />
       <extension name="coverage">
         <pattern>
@@ -56,34 +54,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Merge_Sort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Time_Complexity.Merge_Sort" />
-      <module name="CodingBlocks_Summer_Internship" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Time_Complexity.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Merge_Two_Sorted_Arrays" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Time_Complexity.Merge_Two_Sorted_Arrays" />
-      <module name="CodingBlocks_Summer_Internship" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Time_Complexity.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Stack_Implementation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Stacks.Stack_Implementation" />
+    <configuration name="Delete_Middle_Element" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Stacks.Delete_Middle_Element" />
       <module name="CodingBlocks_Summer_Internship" />
       <extension name="coverage">
         <pattern>
@@ -95,8 +67,34 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Stack_With_Array" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Stacks.Stack_With_Array" />
+    <configuration name="Next_Greater_Element" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Stacks.Next_Greater_Element" />
+      <module name="CodingBlocks_Summer_Internship" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Stacks.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Reverse_Stack" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Stacks.Reverse_Stack" />
+      <module name="CodingBlocks_Summer_Internship" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Stacks.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Stock_Span" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Stacks.Stock_Span" />
       <module name="CodingBlocks_Summer_Internship" />
       <extension name="coverage">
         <pattern>
@@ -110,11 +108,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.DynamicStack" />
-        <item itemvalue="Application.Stack_With_Array" />
-        <item itemvalue="Application.Stack_Implementation" />
-        <item itemvalue="Application.Merge_Sort" />
-        <item itemvalue="Application.Merge_Two_Sorted_Arrays" />
+        <item itemvalue="Application.Stock_Span" />
+        <item itemvalue="Application.Reverse_Stack" />
+        <item itemvalue="Application.Delete_Middle_Element" />
+        <item itemvalue="Application.Balanced_Parenthesis" />
+        <item itemvalue="Application.Next_Greater_Element" />
       </list>
     </recent_temporary>
   </component>
@@ -204,7 +202,21 @@
       <option name="project" value="LOCAL" />
       <updated>1687276109393</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Intial Version">
+      <created>1687793163351</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1687793163351</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Intial Version">
+      <created>1687871379140</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1687871379140</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
