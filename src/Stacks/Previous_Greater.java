@@ -12,7 +12,7 @@ public class Previous_Greater {
     private static void prevGreater(int[] arr, int n) {
         Stack<Integer> s = new Stack<>();
         for (int i = 0; i < n; i++) {
-            while(!s.isEmpty() && arr[i]>s.peek())
+            while(!s.isEmpty() && arr[i]>=s.peek())
                 s.pop();
             if(s.isEmpty())
                 System.out.print(-1+" ");

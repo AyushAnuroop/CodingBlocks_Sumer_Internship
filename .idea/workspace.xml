@@ -2,8 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b41bcdb9-c141-4351-9591-88a0d4898c25" name="Changes" comment="Intial Version">
+      <change afterPath="$PROJECT_DIR$/src/Hashing/Exist_Or_Not.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Hashing/Frequency.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Hashing/Group_Anagrams.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Hashing/Intersection_Arrays.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Hashing/Longest_Consecutive.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Hashing/Pair_Of_Lines.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Hashing/Subarray_Distinct_Elements.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Hashing/Two_Sum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Heap_File/Heap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Heap_File/PriorityQueueDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Heap_File/Top_K_Elements.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/LinkedLists/DeleteLL.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/LinkedLists/Kth_Node_From_Last.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/LinkedLists/LinkedList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/LinkedLists/Reverse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Queues/Queue_Using_Array.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Stacks/Celebrity_Problem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Stacks/Histogram.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Stacks/Importance_Of_Time.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Stacks/Previous_Smaller_Element.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Recursion/Climbing_Stairs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Recursion/Climbing_Stairs.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Stacks/Next_Greater_Element.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stacks/Next_Greater_Element.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Stacks/Previous_Greater.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stacks/Previous_Greater.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,13 +47,16 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2R3QxkKXSUTiBqy8AZhodi2YFRG" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/My PC/Coding Languages/GFG_and_Coding_blocks_Problems&quot;
@@ -41,9 +67,9 @@
       <recent name="C:\Users\My PC\Coding Languages\CodingBlocks_Summer_Internship\src\Recursion" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Next_Greater_Element">
-    <configuration name="Next_Greater_Element" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Stacks.Next_Greater_Element" />
+  <component name="RunManager" selected="Application.Top_K_Elements">
+    <configuration name="Celebrity_Problem" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Stacks.Celebrity_Problem" />
       <module name="CodingBlocks_Summer_Internship" />
       <extension name="coverage">
         <pattern>
@@ -55,12 +81,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Previous_Greater" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Stacks.Previous_Greater" />
+    <configuration name="MMA_Fighter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="GLA_CP_2.MMA_Fighter" />
       <module name="CodingBlocks_Summer_Internship" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Stacks.*" />
+          <option name="PATTERN" value="GLA_CP_2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -68,12 +94,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Reverse_Stack" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Stacks.Reverse_Stack" />
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="CodingBlocks_Summer_Internship" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Subarray_with_Distinct_Elements" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Hashing.Subarray_with_Distinct_Elements" />
       <module name="CodingBlocks_Summer_Internship" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Stacks.*" />
+          <option name="PATTERN" value="Hashing.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -81,25 +114,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Stock_Span" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Stacks.Stock_Span" />
+    <configuration name="Top_K_Elements" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Heap_File.Top_K_Elements" />
       <module name="CodingBlocks_Summer_Internship" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Stacks.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Time_Complexity.Test" />
-      <module name="CodingBlocks_Summer_Internship" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Time_Complexity.*" />
+          <option name="PATTERN" value="Heap_File.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -109,11 +129,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Next_Greater_Element" />
-        <item itemvalue="Application.Test" />
-        <item itemvalue="Application.Previous_Greater" />
-        <item itemvalue="Application.Stock_Span" />
-        <item itemvalue="Application.Reverse_Stack" />
+        <item itemvalue="Application.Top_K_Elements" />
+        <item itemvalue="Application.Subarray_with_Distinct_Elements" />
+        <item itemvalue="Application.MMA_Fighter" />
+        <item itemvalue="Application.Celebrity_Problem" />
+        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -259,7 +279,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687941331545</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Intial Version">
+      <created>1687957823845</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1687957823845</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -267,13 +294,26 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Intial Version" />
     <option name="LAST_COMMIT_MESSAGE" value="Intial Version" />
   </component>

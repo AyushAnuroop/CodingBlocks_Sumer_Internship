@@ -11,8 +11,8 @@ public class Climbing_Stairs {
             return 0;
         int one = climbStair(n - 1);
         int two = climbStair(n - 2);
-        int res = one + two;
-        return res;
+//        int res = one + two;
+        return one+two;
     }
 
     // Using Recursion
@@ -47,9 +47,9 @@ public class Climbing_Stairs {
     }
 
     public static void main(String[] args) {
-        int n = 5; // number of stairs.
-        System.out.println("\n" + climb("", 0, n));
+        int n = 30; // number of stairs.
+//        System.out.println("\n" + climb("", 0, n));
         System.out.println(climbStairs(n));
-        System.out.println(climbStair(n));
+//        System.out.println(climbStair(n));
     }
 }

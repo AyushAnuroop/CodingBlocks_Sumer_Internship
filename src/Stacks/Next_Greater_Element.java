@@ -39,19 +39,26 @@ public class Next_Greater_Element {
 //      11 9 13 21 3 ==>13, 13, 21, -1,-1
     private static void nextGreater(int[] arr, int n) {
         Stack<Integer> s = new Stack<>();
-        ArrayList<String> list = new ArrayList<>();
+//        ArrayList<String> list = new ArrayList<>();
+        int [] res = new int[n];
         for (int i = n-1; i >=0; i--) {
-            while(!s.isEmpty() && arr[i]>s.peek())
+            while(!s.isEmpty() && arr[i]>=s.peek())
                 s.pop();
             if(s.isEmpty())
-                list.add(arr[i]+" "+-1);
+                res[i]=-1;
+//                list.add(arr[i]+" "+-1);
             else
-                list.add(arr[i]+" "+s.peek());
+                res[i]=s.peek();
+//                list.add(arr[i]+" "+s.peek());
             s.push(arr[i]);
         }
-        Collections.reverse(list);
-        for (String str : list) {
-            System.out.println(str);
+
+//        Collections.reverse(list);
+//        for (String str : list) {
+//            System.out.println(str);
+//        }
+        for (int i = 0; i < n; i++) {
+            System.out.println(arr[i]+" "+res[i]);
         }
     }
 }

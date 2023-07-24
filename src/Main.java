@@ -1,43 +1,256 @@
 import java.util.*;
-public class Main {
+class LinkedList {
+    private class Node {
+        int data;
+        Node next;
 
-    static int current = 0;
-    public static void main(String args[]) {
-        Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
-        int[][] chess_board = new int[n][n];
-        int count = 0;
-        for(int i = 0 ; i < n ; i++){
-            for(int j = 0 ; j < n ; j++){
-                int x = sc.nextInt();
-                if(x == 1){
-                    count++;
-                }
-                chess_board[i][j] = x;
-            }
+        Node(int data, Node next) {
+            this.data = data;
+            this.next = next;
         }
-
-        // current = 0;
-        Knight(chess_board , 0 , 0 , 0 , n);
-        System.out.println(count-current);
     }
 
-    static void Knight(int[][] chess_board , int r , int c, int count , int n){
-        if(r < 0 || r >= n || c < 0 || c >= n || chess_board[r][c] == 0){
-            return;
+    private Node head;
+    private Node tail;
+    private int size;
+
+    public LinkedList() {
+        this.head = null;
+        this.tail = null;
+        this.size = 0;
+    }
+
+    public LinkedList(Node head, Node tail, int size) {
+        this.head = head;
+        this.tail = tail;
+        this.size = size;
+    }
+
+    // O(1)
+    public int size() {
+        return this.size;
+    }
+
+    // O(1)
+    public boolean isEmpty() {
+        return this.size() == 0;
+    }
+
+    // O(1)
+    public int getFirst() throws Exception {
+        if (this.isEmpty()) {
+            throw new Exception("List is empty.");
         }
 
-        chess_board[r][c] = 0;
-        if(current < count + 1){
-            current = count+1;
+        return this.head.data;
+    }
+
+    // O(1)
+    public int getLast() throws Exception {
+        if (this.isEmpty()) {
+            throw new Exception("List is empty.");
         }
 
-        int[] rb = {-2 , -2 , -1 , -1 , 1 , 1 , 2 , 2};
-        int[] cb = {-1 , 1 , -2 , 2 , -2 , 2 , -1 , 1};
-        chess_board[r][c] = 0;
-        for(int i = 0 ; i < rb.length ; i++){
-            Knight(chess_board , r + rb[i] , c+cb[i] , count+1 , n);
+        return this.tail.data;
+    }
+
+    // O(N)
+    public int getAt(int idx) throws Exception {
+        Node temp = this.getNodeAt(idx);
+        return temp.data;
+    }
+
+    // O(N)
+    private Node getNodeAt(int idx) throws Exception {
+        if (this.isEmpty()) {
+            throw new Exception("List is empty");
         }
-        chess_board[r][c] = 1;
+
+        if (idx < 0 || idx >= this.size()) {
+            throw new Exception("Invalid arguments");
+        }
+
+        Node retVal = this.head;
+        for (int i = 0; i < idx; i++) {
+            retVal = retVal.next;
+        }
+
+        return retVal;
+    }
+
+    // O(1)
+    public void addFirst(int data) {
+        Node node = new Node(data, this.head);
+
+        if (this.size() == 0) {
+            this.head = node;
+            this.tail = node;
+        } else {
+            this.head = node;
+        }
+
+        this.size++;
+    }
+
+    // O(1)
+    public void addLast(int data) {
+        Node node = new Node(data, null);
+
+        if (this.size() == 0) {
+            this.head = node;
+            this.tail = node;
+        } else {
+            this.tail.next = node;
+            this.tail = node;
+        }
+
+        this.size++;
+    }
+
+    // O(n)
+    public void addAt(int idx, int data) throws Exception {
+        if (idx < 0 || idx > this.size()) {
+            throw new Exception("Invalid arguments");
+        }
+
+        if (idx == 0) {
+            this.addFirst(data);
+        } else if (idx == this.size()) {
+            this.addLast(data);
+        } else {
+            Node nm1 = this.getNodeAt(idx - 1);
+            Node n = nm1.next;
+
+            Node node = new Node(data, n);
+            nm1.next = node;
+
+            this.size++;
+        }
+    }
+
+    // O(1)
+    public int removeFirst() throws Exception {
+        if (this.isEmpty()) {
+            throw new Exception("List is empty");
+        }
+
+        int retVal = this.head.data;
+
+        if (this.size() == 1) {
+            this.head = null;
+            this.tail = null;
+        } else {
+            this.head = this.head.next;
+        }
+
+        this.size--;
+        return retVal;
+    }
+
+    // O(n)
+    public int removeLast() throws Exception {
+        if (this.isEmpty()) {
+            throw new Exception("List is empty");
+        }
+
+        int retVal = this.tail.data;
+
+        if (this.size() == 1) {
+            this.head = null;
+            this.tail = null;
+        } else {
+            Node sm2 = this.getNodeAt(this.size() - 2);
+            sm2.next = null;
+            this.tail = sm2;
+        }
+
+        this.size--;
+        return retVal;
+    }
+
+    // O(n)
+    public int removeAt(int idx) throws Exception {
+        if (this.isEmpty()) {
+            throw new Exception("List is empty");
+        }
+
+        if (idx < 0 || idx >= this.size()) {
+            throw new Exception("Invalid arguments");
+        }
+
+        if (idx == 0) {
+            return this.removeFirst();
+        } else if (idx == this.size() - 1) {
+            return this.removeLast();
+        } else {
+            Node nm1 = this.getNodeAt(idx - 1);
+            Node n = nm1.next;
+            Node np1 = n.next;
+
+            nm1.next = np1;
+            this.size--;
+
+            return n.data;
+        }
+    }
+
+    // O(n)
+    public void display() {
+        Node node = this.head;
+
+        while (node != null) {
+            System.out.print(node.data + " ");
+            node = node.next;
+        }
+
+        //System.out.println("END");
+    }
+    public boolean isPalindrome() {
+        if (isEmpty()) {
+            return true;
+        }
+
+        Node slow = head;
+        Node fast = head;
+        Stack<Integer> stack = new Stack<>();
+
+        // Push elements onto the stack until halfway through the list
+        while (fast != null && fast.next != null) {
+            stack.push(slow.data);
+            slow = slow.next;
+            fast = fast.next.next;
+        }
+
+        // Skip the middle element for odd-length lists
+        if (fast != null) {
+            slow = slow.next;
+        }
+
+        // Compare elements in the second half with the elements in the stack
+        while (slow != null) {
+            if (slow.data != stack.pop()) {
+                return false;
+            }
+            slow = slow.next;
+        }
+
+        return true;
     }
 }
+public class Main{
+    public static void main(String[] args) throws Exception {
+
+        Scanner scn = new Scanner(System.in);
+        int N = scn.nextInt();
+
+
+        LinkedList list = new LinkedList();
+
+        for (int i = 0; i < N; i++) {
+            list.addLast(scn.nextInt());
+        }
+
+        System.out.println(list.isPalindrome());
+    }
+}
+
